@@ -1,0 +1,390 @@
+//----------Media query for Mobile Landscape------------------
+@media screen and (min-width:811px) and ( max-width:926px) {
+    h2{
+        margin-top: 0;
+    }
+
+//----------HEADER/NAVIGATION(Mobile Landscape)------------------
+nav{
+    ul{
+        justify-content: space-around;
+        height: 50px;
+    }
+    li{
+        padding-top:10px;
+        padding-bottom: 20px;
+    }
+}
+nav > ul:last-of-type{
+   padding-right: 20px;
+}
+
+//----------EDUCATION SECTION(Mobile Landscape)--------------------
+.section-education {
+    .list-no-display {
+        list-style-type: initial;
+      }
+    }
+
+//----------ABOUT ME(Mobile Landscape)------------------
+.section-about-me{
+    height: 400px;
+    h1{
+        margin-bottom: 20px;;
+    }
+    p{
+        margin-left: 60px;
+        text-align: space-around;
+        margin-top: 0;
+        margin-right: 0;
+        font-size: 3rem;
+    }
+}
+}/*Close media query for Mobile Landscape*/
+
+//----------Media query for Tablet(f.ex:iPad etc)------------------
+@media screen and (min-width:761px) and ( max-width:810px) {
+    /*　画面サイズが481pxから810pxまではここを読み込む　*/
+    h2,h3,p {
+      margin-left: 150px;;
+    }
+    h2{
+        margin-top: 0;
+    }
+
+//----------HEADER/NAVIGATION(Tablet)------------------
+nav{
+    ul{
+        justify-content: space-around;
+    }
+    li{
+        padding-top:20px;
+        padding-bottom: 20px;
+    }
+}
+
+nav > ul:last-of-type{
+   padding-right: 20px;
+}
+
+//----------ABOUT ME(Tablet)------------------
+.section-about-me{
+    background-position: center top;
+    height: 370px;
+    h1{
+        margin-bottom: 20px;
+    }
+    p{
+        text-align: space-around;
+        margin-left:100px;
+        margin-right: 100px;
+        margin-top: 0;
+        font-size: 3rem;
+    }
+}
+
+//----------PROJECT SECTION(Tablet)--------------------
+.section-project {
+    img{
+        margin-left:0;
+    }
+}
+.project-item{
+    margin-left: 150px;
+}
+
+//----------EDUCATION SECTION(Tablet)--------------------
+.section-education {
+    p, ul{
+        margin-left: 150px;
+    }
+    .list-no-display {
+        list-style-type: initial;
+      }
+    }
+
+//----------COMPETENCE SECTION(Tablet)--------------------
+.section-competence{
+    ul{
+        margin-left: 150px;
+    }
+}
+
+//----------WORK SECTION(Tablet)--------------------
+.section-work{
+    p, ul{
+        margin-left: 150px;
+    }
+}
+
+//----------CONTACT FORM(Tablet)--------------------
+.section-contact-form {
+    label,input,textarea {
+        margin-left: 150px;
+    }
+}
+
+//----------CONTACT INFO / SOCIAL MEDIA(Tablet)--------------------
+.section-contact{
+    div, img{
+    margin-left: 0;
+    }
+    ul{
+    margin-left: 120px;   
+    }
+}
+}/*Close media query for Tablet*/
+
+//----------Media query for Mobile Landscape(f.ex:GalaxyS10/iPhoneSE etc)------------------
+@media screen and (min-width:481px) and ( max-width:760px) {
+    .wrapper-mediaquery{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    h2,h3, p, article,label,textarea, ul{
+        margin-left:20px;
+        margin-right:20px;
+    }
+    h2 {
+        margin-top: 0;
+    }
+//----------ABOUT ME(Mobile Landscape/GalaxyS10/iPhoneSE)------------------
+.section-about-me {
+    padding-top: 0;
+    h1{
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+    p{
+        margin:0;
+        padding-bottom: 20px;
+    }
+}
+
+//----------HEADER/NAVIGATION(Mobile Landscape/GalaxyS10/iPhoneSE)------------------
+    nav {
+        ul{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height:auto;
+        margin-bottom: 0;
+        padding-top:10px;
+        padding-bottom: 10px;
+        margin-left: 0;
+        }
+        li{
+            max-width: 100%;
+        }
+        a{
+            line-height: 2.8;
+            text-decoration-line: underline;
+        }
+    }
+
+//----------EDUCATION SECTION(Mobile Landscape/GalaxyS10/iPhoneSE)------------------
+.section-education {
+    p{
+        margin-left: 20px;
+    }
+    ul{
+        margin-left:0;
+        margin-bottom: 0;
+    }
+    
+    .list-no-display {
+        list-style-type: initial;
+      }
+}
+
+//----------COMPETENCE SECTION(Mobile Landscape/GalaxyS10/iPhoneSE)------------------
+.section-competence{
+    background-position: right top;
+    background-color: rgba(#fff,.5);
+    padding-top: 0;
+    h2, h3, ul{
+        opacity: 1;
+    }
+    ul{
+        margin: 0 20px;
+    }
+}
+.competence-content {
+    background-color: rgba(#fff, .4);
+    z-index: 99;
+}
+
+//----------WORK SECTION(Mobile Landscape/GalaxyS10/iPhoneSE)--------------------------
+.section-work{
+    //padding-bottom: 0;
+    p{
+    margin-left:20px;
+    margin-right:20px;
+    }
+    ul{
+    margin: 0 20px;
+    }
+}
+
+//----------CONTACT FORM(Mobile Landscape/GalaxyS10/iPhoneSE)--------------------------
+    .section-contact-form{
+        padding-top: 0;
+        input[type="text"],
+        input[type="email"]{
+            margin-left: 20px;
+        }
+        input[type="submit"]{
+            margin-left:20px;
+        }
+        textarea {
+            width: 300px;
+        }
+    }
+
+//----------CONTACT INFO/SOCIAL MEDIA(MobileLandscape/GalaxyS10/iPhoneSE)------------  
+.contact-flex {
+    margin-left: 10px;
+    flex-direction: inline-block;
+    flex-direction: column;
+}
+.contact-logo{
+    margin-right: 0;
+}
+
+}/*Close media query for Mobile Landscape(Galaxy,iPhoneSE)*/
+
+
+//----------Media query for mobile(f.ex:iPhone etc)------------------
+@media screen and (max-width:480px){
+    .wrapper-mediaquery{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    h2,h3, p, article,label,textarea{
+        margin-left:20px;
+        margin-right:20px;
+    }
+
+    h2{
+        margin-top:0;
+    }
+    
+//----------HEADER/NAVIGATION(Mobile)------------------
+    nav {
+        ul{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height:auto;
+        margin-bottom: 0;
+        padding-top:10px;
+        padding-bottom: 10px;
+        }
+        li{
+            max-width: 100%;
+        }
+        a{
+            line-height: 2.8;
+            text-decoration-line: underline;
+        }
+    }
+//----------About Me(Mobile)------------------
+    .section-about-me{
+        background-position: center top;
+        height: 350px;;
+        h1{
+            margin-top: 0;
+            padding-top: 0;
+            color: $darkpink;
+            font-size: 2.2rem;
+        }
+        p{
+            text-align: space-around;
+            margin-right: 5px ;
+            margin-top: 0;
+            color: $darkpink;
+            font-size: 2.2rem;
+        }
+    }
+
+//----------PROJECT SECTION(Mobile)--------------------
+    img {
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+//----------EDUCATION SECTION(Mobile)------------------
+    .section-education {
+        p{
+            margin-left: 20px;
+        }
+        ul{
+            margin-left:0;
+            margin-bottom: 0;
+        }
+        
+        .list-no-display {
+            list-style-type: initial;
+          }
+    }
+
+//----------COMPETENCE SECTION(Mobile)------------------
+    .section-competence{
+        background-position: right top;
+        background-color: rgba(#fff,.5);
+        padding-top: 0;
+        h2, h3, ul{
+            opacity: 1;
+        }
+        ul{
+            margin: 0 20px;
+        }
+    }
+    .competence-content {
+        background-color: rgba(#fff, .4);
+        z-index: 99;
+    }
+
+//----------WORK SECTION(Mobile)--------------------------
+    .section-work{
+        //padding-bottom: 0;
+        p{
+        margin-left:20px;
+        margin-right:20px;
+        }
+        ul{
+        margin: 0 20px;
+        }
+    }
+
+//----------CONTACT FORM(Mobile)--------------------------
+    .section-contact-form{
+        padding-top: 0;
+        input[type="text"],
+        input[type="email"]{
+            margin-left: 20px;
+        }
+        input[type="submit"]{
+            margin-left:20px;
+        }
+        textarea {
+            width: 300px;
+        }
+    }
+
+//----------CONTACT INFO / SOCIAL MEDIA(Mobile)------------  
+    .contact-flex {
+        margin-left: 10px;
+        flex-direction: inline-block;
+        flex-direction: column;
+    }
+
+    .contact-logo {
+        width: 150px;
+        height: auto;
+    }
+
+}/*Close media query for Mobile*/
+
