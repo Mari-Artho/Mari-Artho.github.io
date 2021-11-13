@@ -57,7 +57,7 @@ nav {
     height: 60vh;
     font-family: 'Caveat', cursive;
     line-height: 1;
-    color:white;
+    color:black;
     text-align: center;
     padding-top: 57px;
     font-size: 2.5rem;
@@ -69,7 +69,7 @@ nav {
 
 //----------Project Section------------------
 .section-project{
-    background-color:$Beige;
+    background-color:$beige;
     article {
         border-bottom: var(--border-bottom);
         padding-bottom: 20px;
@@ -89,13 +89,14 @@ nav {
 
 //----------Education Section------------------
 .section-education{
-    background-color:$Gray;
+    background-color:$gray;
     p{
         margin-left: var(--margin-left);
     }
     ul{
         margin-left: var(--margin-left);
         border-bottom: var(--border-bottom);
+        padding-bottom: 10px;
         margin-bottom: 0;
     }
     .list-no-display {
@@ -132,7 +133,6 @@ nav {
     }
     p{
         margin-left: var(--margin-left);
-        font-style: italic;
     }
     ul{
         margin-left: var(--margin-left);
@@ -162,7 +162,7 @@ nav {
     font-size: 1.3rem;
 }
 
-label {
+label{
     display: block;
     margin-left: var(--margin-left);
 }
@@ -203,7 +203,7 @@ input[type="submit"]{
     color: white;
     letter-spacing: 6px;
     &:hover{
-        background-color: $pink;
+        background-color: $hover-pink;
     }
 }
 

@@ -1,4 +1,4 @@
-//----------Media query for Mobile Landscape------------------
+//----------Mobile Landscape:811px-926px-------------------------
 @media screen and (min-width:811px) and ( max-width:926px) {
     h2{
         margin-top: 0;
@@ -26,7 +26,7 @@ nav > ul:last-of-type{
       }
     }
 
-//----------ABOUT ME(Mobile Landscape)------------------
+//----------ABOUT ME(Mobile Landscape)-----------------------------
 .section-about-me{
     height: 400px;
     h1{
@@ -34,17 +34,16 @@ nav > ul:last-of-type{
     }
     p{
         margin-left: 60px;
-        text-align: space-around;
+        justify-content: space-around;
         margin-top: 0;
         margin-right: 0;
         font-size: 3rem;
     }
 }
-}/*Close media query for Mobile Landscape*/
+}/*Mobile Landscape:811px-926px*/
 
-//----------Media query for Tablet(f.ex:iPad etc)------------------
+//----------Tablet:761px-810px------------------------------
 @media screen and (min-width:761px) and ( max-width:810px) {
-    /*　画面サイズが481pxから810pxまではここを読み込む　*/
     h2,h3,p {
       margin-left: 150px;;
     }
@@ -52,7 +51,7 @@ nav > ul:last-of-type{
         margin-top: 0;
     }
 
-//----------HEADER/NAVIGATION(Tablet)------------------
+//----------HEADER/NAVIGATION(Tablet)---------------------
 nav{
     ul{
         justify-content: space-around;
@@ -67,7 +66,7 @@ nav > ul:last-of-type{
    padding-right: 20px;
 }
 
-//----------ABOUT ME(Tablet)------------------
+//----------ABOUT ME(Tablet)--------------------------------
 .section-about-me{
     background-position: center top;
     height: 370px;
@@ -75,7 +74,7 @@ nav > ul:last-of-type{
         margin-bottom: 20px;
     }
     p{
-        text-align: space-around;
+        justify-content: space-around;
         margin-left:100px;
         margin-right: 100px;
         margin-top: 0;
@@ -110,21 +109,21 @@ nav > ul:last-of-type{
     }
 }
 
-//----------WORK SECTION(Tablet)--------------------
+//----------WORK SECTION(Tablet)--------------------------
 .section-work{
     p, ul{
         margin-left: 150px;
     }
 }
 
-//----------CONTACT FORM(Tablet)--------------------
+//----------CONTACT FORM(Tablet)-------------------------
 .section-contact-form {
     label,input,textarea {
         margin-left: 150px;
     }
 }
 
-//----------CONTACT INFO / SOCIAL MEDIA(Tablet)--------------------
+//----------CONTACT INFO/SOCIAL MEDIA(Tablet)--------------
 .section-contact{
     div, img{
     margin-left: 0;
@@ -133,9 +132,9 @@ nav > ul:last-of-type{
     margin-left: 120px;   
     }
 }
-}/*Close media query for Tablet*/
+}/*Tablet:761px-810px*/
 
-//----------Media query for Mobile Landscape(f.ex:GalaxyS10/iPhoneSE etc)------------------
+//----------Mobile Landscape:481px-760px(f.ex:GalaxyS10/iPhoneSE etc)------------------
 @media screen and (min-width:481px) and ( max-width:760px) {
     .wrapper-mediaquery{
         display: flex;
@@ -148,6 +147,7 @@ nav > ul:last-of-type{
     h2 {
         margin-top: 0;
     }
+
 //----------ABOUT ME(Mobile Landscape/GalaxyS10/iPhoneSE)------------------
 .section-about-me {
     padding-top: 0;
@@ -162,24 +162,9 @@ nav > ul:last-of-type{
 }
 
 //----------HEADER/NAVIGATION(Mobile Landscape/GalaxyS10/iPhoneSE)------------------
-    nav {
-        ul{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        height:auto;
-        margin-bottom: 0;
-        padding-top:10px;
-        padding-bottom: 10px;
+    nav{
+        @include responsive-nav;
         margin-left: 0;
-        }
-        li{
-            max-width: 100%;
-        }
-        a{
-            line-height: 2.8;
-            text-decoration-line: underline;
-        }
     }
 
 //----------EDUCATION SECTION(Mobile Landscape/GalaxyS10/iPhoneSE)------------------
@@ -216,7 +201,6 @@ nav > ul:last-of-type{
 
 //----------WORK SECTION(Mobile Landscape/GalaxyS10/iPhoneSE)--------------------------
 .section-work{
-    //padding-bottom: 0;
     p{
     margin-left:20px;
     margin-right:20px;
@@ -228,67 +212,40 @@ nav > ul:last-of-type{
 
 //----------CONTACT FORM(Mobile Landscape/GalaxyS10/iPhoneSE)--------------------------
     .section-contact-form{
-        padding-top: 0;
-        input[type="text"],
-        input[type="email"]{
-            margin-left: 20px;
-        }
-        input[type="submit"]{
-            margin-left:20px;
-        }
-        textarea {
-            width: 300px;
-        }
+        @include responsive-contact-form;
     }
 
 //----------CONTACT INFO/SOCIAL MEDIA(MobileLandscape/GalaxyS10/iPhoneSE)------------  
 .contact-flex {
     margin-left: 10px;
-    flex-direction: inline-block;
+    display: inline-block;
     flex-direction: column;
 }
 .contact-logo{
     margin-right: 0;
 }
+}/*Mobile Landscape:481px-760px(Galaxy,iPhoneSE)*/
 
-}/*Close media query for Mobile Landscape(Galaxy,iPhoneSE)*/
 
-
-//----------Media query for mobile(f.ex:iPhone etc)------------------
+//----------Mobile:max480px(f.ex:iPhone etc)------------------
 @media screen and (max-width:480px){
     .wrapper-mediaquery{
         display: flex;
         flex-direction: column-reverse;
     }
-
     h2,h3, p, article,label,textarea{
         margin-left:20px;
         margin-right:20px;
     }
-
     h2{
         margin-top:0;
     }
     
 //----------HEADER/NAVIGATION(Mobile)------------------
-    nav {
-        ul{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        height:auto;
-        margin-bottom: 0;
-        padding-top:10px;
-        padding-bottom: 10px;
-        }
-        li{
-            max-width: 100%;
-        }
-        a{
-            line-height: 2.8;
-            text-decoration-line: underline;
-        }
+    nav{
+        @include responsive-nav;
     }
+
 //----------About Me(Mobile)------------------
     .section-about-me{
         background-position: center top;
@@ -296,14 +253,12 @@ nav > ul:last-of-type{
         h1{
             margin-top: 0;
             padding-top: 0;
-            color: $darkpink;
             font-size: 2.2rem;
         }
         p{
-            text-align: space-around;
+            justify-content: space-around;
             margin-right: 5px ;
             margin-top: 0;
-            color: $darkpink;
             font-size: 2.2rem;
         }
     }
@@ -324,22 +279,25 @@ nav > ul:last-of-type{
             margin-left:0;
             margin-bottom: 0;
         }
-        
         .list-no-display {
             list-style-type: initial;
-          }
+        }
     }
 
 //----------COMPETENCE SECTION(Mobile)------------------
     .section-competence{
         background-position: right top;
-        background-color: rgba(#fff,.5);
+        background-color: rgba(#ffffff,.5);
         padding-top: 0;
         h2, h3, ul{
             opacity: 1;
         }
         ul{
             margin: 0 20px;
+        }
+        li{
+            color:rgb(2, 0, 12);
+            font-weight: bold;
         }
     }
     .competence-content {
@@ -349,7 +307,6 @@ nav > ul:last-of-type{
 
 //----------WORK SECTION(Mobile)--------------------------
     .section-work{
-        //padding-bottom: 0;
         p{
         margin-left:20px;
         margin-right:20px;
@@ -361,30 +318,19 @@ nav > ul:last-of-type{
 
 //----------CONTACT FORM(Mobile)--------------------------
     .section-contact-form{
-        padding-top: 0;
-        input[type="text"],
-        input[type="email"]{
-            margin-left: 20px;
-        }
-        input[type="submit"]{
-            margin-left:20px;
-        }
-        textarea {
-            width: 300px;
-        }
+        @include responsive-contact-form;
     }
 
 //----------CONTACT INFO / SOCIAL MEDIA(Mobile)------------  
     .contact-flex {
         margin-left: 10px;
-        flex-direction: inline-block;
+        display: inline-block;
         flex-direction: column;
     }
-
     .contact-logo {
         width: 150px;
         height: auto;
     }
 
-}/*Close media query for Mobile*/
+}/*Close Mobile:max480px*/
 
