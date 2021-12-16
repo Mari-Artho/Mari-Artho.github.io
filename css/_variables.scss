@@ -1,47 +1,46 @@
 :root {
-    --nav-padding-top: 2vh;
-    --border-bottom: 1px dashed black;
-    --margin-left:25%;
+  --nav-padding-top: 2vh;
+  --border-bottom: 1px dashed black;
+  --margin-left: 25%;
 }
 
 //----------COLOR-------------------------------
-$hover-pink:rgba(237, 8, 126, 0.618);
-$darkpink:rgb(133, 5, 69);
+$hover-pink: rgba(237, 8, 126, 0.618);
+$darkpink: rgb(133, 5, 69);
 $beige: rgb(223, 216, 205);
 $gray: rgba(165, 169, 170, 0.378);
 
 //----------Nav for media query------------------
-@mixin responsive-nav{
-    ul{
+@mixin responsive-nav {
+  ul {
     position: relative;
     display: flex;
     flex-direction: column;
-    height:auto;
+    height: auto;
     margin-bottom: 0;
-    padding-top:10px;
+    padding-top: 10px;
     padding-bottom: 10px;
-    }
-    li{
-        max-width: 100%;
-    }
-    a{
-        line-height: 2.8;
-        text-decoration-line: underline;
-    }
+  }
+  li {
+    max-width: 100%;
+  }
+  a {
+    line-height: 2.8;
+    text-decoration-line: underline;
+  }
 }
 
 //----------Contact Form for media query------------------
-@mixin responsive-contact-form{
-        padding-top: 0;
-        input[type="text"],
-        input[type="email"]{
-            margin-left: 20px;
-        }
-        input[type="submit"]{
-            margin-left:20px;
-        }
-        textarea {
-            width: 300px;
-        }
-    }   
-       
+@mixin responsive-contact-form {
+  padding-top: 0;
+  input[type="text"],
+  input[type="email"] {
+    margin-left: 20px;
+  }
+  input[type="submit"] {
+    margin-left: 20px;
+  }
+  textarea {
+    width: 300px;
+  }
+}

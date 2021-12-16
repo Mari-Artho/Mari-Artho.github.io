@@ -1,240 +1,243 @@
-@import 'variables';
+@import "variables";
 //------Click the link and it will move smoothly--------
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    font-family: 'Merriweather', serif;
-    line-height: 1.7;
-    width: auto;
+body {
+  font-family: "Merriweather", serif;
+  line-height: 1.7;
+  width: auto;
 }
 
-h2{
-    font-family:'Caveat', cursive;
-    font-size: 2.5rem;
-    margin-left: var(--margin-left);
-    &:hover{
-        color:rgb(61, 79, 240);
-        border-bottom: 2px solid rgb(61, 79, 240) ;
-        max-width: 15rem;
-    }
+h2 {
+  font-family: "Caveat", cursive;
+  font-size: 2.5rem;
+  margin-left: var(--margin-left);
+  &:hover {
+    color: rgb(61, 79, 240);
+    border-bottom: 2px solid rgb(61, 79, 240);
+    max-width: 15rem;
+  }
 }
 
-
-h3, p, article{
-    margin-left: var(--margin-left);
+h3,
+p,
+article {
+  margin-left: var(--margin-left);
 }
 
 //----------Main Navigation------------------
 nav {
-    ul{
+  ul {
     display: flex;
     text-transform: uppercase;
     list-style: none;
-    justify-content:space-evenly;
-    position:fixed;
+    justify-content: space-evenly;
+    position: fixed;
     width: 100%;
     z-index: 999;
-    background:rgb(249, 242, 242);
+    background: rgb(249, 242, 242);
     height: 6.5vh;
     margin-top: 0;
-    }
-    li{
-        padding-top: 3px;
-    }
-    a{
-        text-decoration: none;
-        color:black;
-    }
+  }
+  li {
+    padding-top: 3px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 //----------About Me------------------
-.section-about-me{
-    background-image: url(../images/sky.jpg);
-    background-size: cover;
-    position: relative;
-    height: 60vh;
-    font-family: 'Caveat', cursive;
-    line-height: 1;
-    color:black;
-    text-align: center;
-    padding-top: 57px;
-    font-size: 2.5rem;
+.section-about-me {
+  background-image: url(../images/sky.jpg);
+  background-size: cover;
+  position: relative;
+  height: 60vh;
+  font-family: "Caveat", cursive;
+  line-height: 1;
+  color: black;
+  text-align: center;
+  padding-top: 57px;
+  font-size: 2.5rem;
 }
 .about-me-p {
-    text-align: center;
-    margin-right: 270px ;
+  text-align: center;
+  margin-right: 270px;
 }
 
 //----------Project Section------------------
-.section-project{
-    background-color:$beige;
-    article {
-        border-bottom: var(--border-bottom);
-        padding-bottom: 20px;
+.section-project {
+  background-color: $beige;
+  article {
+    border-bottom: var(--border-bottom);
+    padding-bottom: 20px;
+  }
+  .project-item {
+    display: flex;
+    img:hover {
+      transform: scale(1.1, 1.1);
     }
-    .project-item{
-        display: flex;
-        img:hover{
-            transform:scale(1.1,1.1);
-          }
-    }
-    padding-top: var(--nav-padding-top);
+  }
+  padding-top: var(--nav-padding-top);
 }
 
-.section-project>article:last-of-type{
-    border-bottom: none;
+.section-project > article:last-of-type {
+  border-bottom: none;
+}
+
+#githubRepos {
+  margin-left: 25%;
 }
 
 //----------Education Section------------------
-.section-education{
-    background-color:$gray;
-    p{
-        margin-left: var(--margin-left);
-    }
-    ul{
-        margin-left: var(--margin-left);
-        border-bottom: var(--border-bottom);
-        padding-bottom: 10px;
-        margin-bottom: 0;
-    }
-    .list-no-display {
-        list-style-type: none;
-      }
-    padding-top: var(--nav-padding-top);
+.section-education {
+  background-color: $gray;
+  p {
+    margin-left: var(--margin-left);
+  }
+  ul {
+    margin-left: var(--margin-left);
+    border-bottom: var(--border-bottom);
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+  .list-no-display {
+    list-style-type: none;
+  }
+  padding-top: var(--nav-padding-top);
 }
-.section-education > ul:last-of-type{
-    border-bottom: none;
-    padding-bottom: 20px;
+.section-education > ul:last-of-type {
+  border-bottom: none;
+  padding-bottom: 20px;
 }
 
 //----------Competence Section------------------
-.section-competence{
-    background-image: url(../images/books-1280.jpg);
-    background-size: cover;
-    position: relative;
-    background-color:rgba(199, 165, 125, 0.308);
-    ul{
-        margin-left: var(--margin-left);
-        padding-bottom: 20px;
-        margin-bottom: 0;
-
-    }
-    padding-top: var(--nav-padding-top);
+.section-competence {
+  background-image: url(../images/books-1280.jpg);
+  background-size: cover;
+  position: relative;
+  background-color: rgba(199, 165, 125, 0.308);
+  ul {
+    margin-left: var(--margin-left);
+    padding-bottom: 20px;
+    margin-bottom: 0;
+  }
+  padding-top: var(--nav-padding-top);
 }
 
 //----------Worke experience Section------------------
-.section-work{
-    background-color: lightgray;
-    h3{
-        color: rgba(1, 8, 62, 0.842);
-        font-weight:700;
-    }
-    p{
-        margin-left: var(--margin-left);
-    }
-    ul{
-        margin-left: var(--margin-left);
-        margin-right: 10%;
-        border-bottom: var(--border-bottom);
-        margin-bottom: 0;
-    }
-    li{
-        padding-bottom: 20px;
-    }
-    padding-top: var(--nav-padding-top);
+.section-work {
+  background-color: lightgray;
+  h3 {
+    color: rgba(1, 8, 62, 0.842);
+    font-weight: 700;
+  }
+  p {
+    margin-left: var(--margin-left);
+  }
+  ul {
+    margin-left: var(--margin-left);
+    margin-right: 10%;
+    border-bottom: var(--border-bottom);
+    margin-bottom: 0;
+  }
+  li {
+    padding-bottom: 20px;
+  }
+  padding-top: var(--nav-padding-top);
 }
 
-.section-work>ul:last-of-type{
-    border-bottom: none;
+.section-work > ul:last-of-type {
+  border-bottom: none;
 }
 
 //----------Contact Form------------------
 .section-contact-form {
-    background-image: url(../images/street.jpg);
-    background-size: cover;
-    padding-top: var(--nav-padding-top);
+  background-image: url(../images/street.jpg);
+  background-size: cover;
+  padding-top: var(--nav-padding-top);
 }
 
-.required{
-    color: red;
-    font-size: 1.3rem;
+.required {
+  color: red;
+  font-size: 1.3rem;
 }
 
-label{
-    display: block;
-    margin-left: var(--margin-left);
+label {
+  display: block;
+  margin-left: var(--margin-left);
 }
 input[type="text"],
 input[type="email"],
 textarea {
-    background: white;
-    border:1px;
-    border-radius: 5px;
-    padding:10px;
-    font-size: 1rem;
-    margin-left: var(--margin-left);
+  background: white;
+  border: 1px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-left: var(--margin-left);
 }
 input[type="text"],
-input[type="email"]{
-    width: 100%;
-    max-width: 240px;
+input[type="email"] {
+  width: 100%;
+  max-width: 240px;
 }
 textarea {
-    width: 100%;
-    max-width: 480px;
-    height: 7rem;
+  width: 100%;
+  max-width: 480px;
+  height: 7rem;
 }
 
-input[type="submit"]{
-    border:none;
-    cursor:pointer;
-    font-family: 'Lucida Sans','Lucida Grande' , Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    width: 8rem;
-    height: 3rem;
-    border-radius: 6%;
-    line-height: 1;
-    margin-top:20px;
-    margin-bottom: 30px;
-    margin-left: var(--margin-left);
-    background-color: rgba(6, 2, 46, 0.851);
-    color: white;
-    letter-spacing: 6px;
-    &:hover{
-        background-color: $hover-pink;
-    }
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  font-family: "Lucida Sans", "Lucida Grande", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  width: 8rem;
+  height: 3rem;
+  border-radius: 6%;
+  line-height: 1;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: var(--margin-left);
+  background-color: rgba(6, 2, 46, 0.851);
+  color: white;
+  letter-spacing: 6px;
+  &:hover {
+    background-color: $hover-pink;
+  }
 }
 
 //----------Contact Section------------------
-.section-contact{
-    background-color:rgb(211, 204, 204);
-    padding-top: var(--nav-padding-top);
-    li{
-      list-style-type: none;
-    }
+.section-contact {
+  background-color: rgb(211, 204, 204);
+  padding-top: var(--nav-padding-top);
+  li {
+    list-style-type: none;
+  }
 }
 
-.contact-flex{
-    display:inline-flex;
-    margin-left: 22%;
-  
+.contact-flex {
+  display: inline-flex;
+  margin-left: 22%;
 }
 
-.contact-item{
-    line-height: 2.4;
-    font-size: 1rem;
+.contact-item {
+  line-height: 2.4;
+  font-size: 1rem;
 }
 
-.contact-logo{
-    border-radius: 60%;
-    margin: 0px 50px 20px 100px ;
+.contact-logo {
+  border-radius: 60%;
+  margin: 0px 50px 20px 100px;
 }
 
 //----------Footer------------------
-footer{
-    text-align: center;
-    margin-bottom: 20px;
-    padding-top: 10px;
+footer {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 10px;
 }

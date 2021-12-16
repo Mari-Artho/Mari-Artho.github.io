@@ -1,179 +1,265 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mari_Artho_CV_Web-developer</title>
+    <meta
+      name="description"
+      content="This is the latest resume for 2021 by Web developper Mari Artho"
+    />
+    <meta
+      name="keywords"
+      content="Mari Artho, CV,Resume, Web developper, Work experience, Stockholm, Sweden, Japan"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Mari Artho's Resume" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/mari_cv.html" />
+    <!--example.com = placeholder for server-->
+    <meta property="og:image" content="https://example.com/mari_cv.png" />
+    <!--example.com = placeholder for server-->
+    <meta name="theme-color" content="#dcc2e1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Merriweather:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!--for icon-->
+    <script
+      src="https://kit.fontawesome.com/dfe89ff884.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--for favicon-->
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Mari_Artho_CV_Web-developer</title>
-  <meta name="description" content="This is the latest resume for 2021 by Web developper Mari Artho">
-  <meta name="keywords" content="Mari Artho, CV,Resume, Web developper, Work experience, Stockholm, Sweden, Japan">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Mari Artho's Resume">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://example.com/mari_cv.html">
-  <!--example.com = placeholder for server-->
-  <meta property="og:image" content="https://example.com/mari_cv.png">
-  <!--example.com = placeholder for server-->
-  <meta name="theme-color" content="#dcc2e1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Merriweather:wght@300&display=swap" rel="stylesheet">
-  <!--for icon-->
-  <script src="https://kit.fontawesome.com/dfe89ff884.js" crossorigin="anonymous"></script>
-  <!--for favicon-->
-  <link rel="icon" type="image/png" href="images/logo.png">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
+    <!-- ***************  Header Navigation **************** -->
+    <div class="wrapper-mediaquery">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#competence">Competence</a></li>
+            <li><a href="#work">Work experience</a></li>
+            <li><a href="#email">Email</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-<body>
-  <!-- ***************  Header Navigation **************** -->
-  <div class="wrapper-mediaquery">
-  <header>
-    <nav>
+      <!-- ***************  ABOUT ME ************************ -->
+      <section id="home" class="section-about-me">
+        <h1>Mari Artho</h1>
+        <p class="about-me-p">Front-end Web Developer</p>
+      </section>
+    </div>
+    <!--class="wrapper-mediaquery"-->
+
+    <!-- ************ PROJECTS / PORTFOLIO  ************** -->
+    <section id="project" class="section-project">
+      <h2>Project</h2>
+      <h3>Cafe | Sött & Elegant</h3>
+      <p>
+        This is the homepage of a fictional cafe that I made as my first home
+        page.
+      </p>
+      <p>⬇︎Click below to jump to the page</p>
+      <article class="project-item">
+        <a href="http://www.mariartho-sweden.x10host.com/konditori/"
+          ><img
+            src="images/konditori-index-600.png"
+            srcset="
+              images/konditori-index-600.png   600w,
+              images/konditori-index-960.png   960w,
+              images/konditori-index-1440.png 1440w,
+              images/konditori-index-1800.png 1800w
+            "
+            sizes="(max-width: 425px) 100vw, (max-width: 800px) 75vw, 100vw"
+            alt="Cafe's homepage images"
+            height="350"
+            width="400"
+        /></a>
+      </article>
+
+      <h3>Online shop | M&C</h3>
+      <p>
+        This is the homepage of a fictional online clothes shop that I made as
+        my second home page, and the name is M&C.
+      </p>
+      <p>⬇︎Click below to jump to the page</p>
+      <article class="project-item">
+        <a href="http://www.mariartho-sweden.x10host.com/MandC/"
+          ><img
+            src="images/mc-index-600.png"
+            srcset="
+              images/mc-index-600.png   600w,
+              images/mc-index-960.png   960w,
+              images/mc-index-1440.png 1440w,
+              images/mc-index-1800.png 1800w
+            "
+            sizes="(max-width: 425px) 100vw, (max-width: 800px) 75vw, 100vw"
+            alt="Onlineshop's homepage images"
+            height="500"
+            width="400"
+        /></a>
+      </article>
+
+      <h3>Github repos</h3>
+      <div id="githubRepos"></div>
+    </section>
+
+    <!-- ****************  EDUCATION  ************************ -->
+    <section id="education" class="section-education">
+      <h2>Education</h2>
+      <h3>Medieinstitutet</h3>
+      <p>Frontend Web Developer | Oct 2021 — in progress</p>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#competence">Competence</a></li>
-        <li><a href="#work">Work experience</a></li>
-        <li><a href="#email">Email</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- ***************  ABOUT ME ************************ -->
-  <section id="home" class="section-about-me">
-    <h1>Mari Artho</h1>
-    <p class="about-me-p" >Front-end Web Developer</p>
-  </section>
-</div><!--class="wrapper-mediaquery"-->
-
-  <!-- ************ PROJECTS / PORTFOLIO  ************** -->
-  <section id="project" class="section-project">
-    <h2>Project</h2>
-    <h3>Cafe | Sött & Elegant</h3>
-    <p>This is the homepage of a fictional cafe that I made as my first home page.</p>
-    <p>⬇︎Click below to jump to the page</p>
-    <article class="project-item">
-      <a href="http://www.mariartho-sweden.x10host.com/konditori/"><img 
-        src="images/konditori-index-600.png" srcset="images/konditori-index-600.png 600w, images/konditori-index-960.png 960w, images/konditori-index-1440.png 1440w, images/konditori-index-1800.png 1800w" sizes="(max-width: 425px) 100vw, (max-width: 800px) 75vw, 100vw" alt="Cafe's homepage images" height="350" width="400"></a>
-    </article>
-
-    <h3>Online shop | M&C</h3>
-    <p>This is the homepage of a fictional online clothes shop that I made as my second home page, and the name is M&C.</p>
-    <p>⬇︎Click below to jump to the page</p>
-    <article class="project-item">
-    <a href="http://www.mariartho-sweden.x10host.com/MandC/"><img src="images/mc-index-600.png" srcset="images/mc-index-600.png 600w, images/mc-index-960.png 960w, images/mc-index-1440.png 1440w, images/mc-index-1800.png 1800w" sizes="(max-width: 425px) 100vw, (max-width: 800px) 75vw, 100vw" alt="Onlineshop's homepage images" height="500" width="400"></a>
-    </article>
-  </section>
-
-  <!-- ****************  EDUCATION  ************************ -->
-  <section id="education" class="section-education">
-    <h2>Education</h2>
-    <h3>Medieinstitutet</h3>
-    <p>Frontend Web Developer | Oct 2021 — in progress</p>
-    <ul>
-      <li>HTML and CSS</li>
-      <li>JavaScript</li>
-      <li>UI</li>
-    </ul>
-    <h3>NTI Skolan</h3>
-    <ul class="list-no-display">
-    <li>Web development 2 (JavaScript) | Mar–May 2021</li>
-    <li>Web development 1 (HTML and CSS) | Sep–Nov 2020</li>
-   </ul>
-    <h3>Åsö vuxengymnasium</h3>
-    <ul class="list-no-display">
-    <li>Programming 2 (Python) | Mar–May 2020</li>
-    <li>Programming 1 (Python) | Oct–Dec 2019</li>
-   </ul>
-  </section>
-
-  <!-- *************  COMPETENCE ************************* -->
-  <section id="competence" class="section-competence">
-    <div class="competence-content">
-      <h2>Competence</h2>
-      <h3>Programming Language</h3>
-      <ul>
-        <li>HTML and CSS</li>
+        <li>HTML and CSS (SASS)</li>
         <li>JavaScript</li>
-        <li>Python</li>
       </ul>
+      <h3>NTI Skolan</h3>
+      <ul class="list-no-display">
+        <li>Web development 2 (JavaScript) | Mar–May 2021</li>
+        <li>Web development 1 (HTML and CSS) | Sep–Nov 2020</li>
+      </ul>
+      <h3>Åsö vuxengymnasium</h3>
+      <ul class="list-no-display">
+        <li>Programming 2 (Python) | Mar–May 2020</li>
+        <li>Programming 1 (Python) | Oct–Dec 2019</li>
+      </ul>
+    </section>
 
-      <h3>Language</h3>
+    <!-- *************  COMPETENCE ************************* -->
+    <section id="competence" class="section-competence">
+      <div class="competence-content">
+        <h2>Competence</h2>
+        <h3>Programming Language</h3>
+        <ul>
+          <li>HTML and CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+        </ul>
+
+        <h3>Language</h3>
+        <ul>
+          <li>Japanese (fluent)</li>
+          <li>Swedish</li>
+          <li>English</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- *************  WORK EXPERIENCE ********************* -->
+    <section id="work" class="section-work">
+      <h2>Work experience</h2>
+      <h3>House Communication Co., Ltd | Osaka, Japan</h3>
+      <p>Accountant | Oct 2015–Jun 2016</p>
       <ul>
-        <li>Japanese (fluent)</li>
-        <li>Swedish</li>
-        <li>English</li>
+        <li>
+          Accounts receivable, accounts payable, and settlement of accounts
+        </li>
+        <li>Land and building sales journal</li>
       </ul>
-    </div>
-  </section>
 
-  <!-- *************  WORK EXPERIENCE ********************* -->
-  <section id="work" class="section-work">
-    <h2>Work experience</h2>
-    <h3>House Communication Co., Ltd | Osaka, Japan</h3>
-    <p>Accountant | Oct 2015–Jun 2016 </p>
-    <ul>
-      <li>Accounts receivable, accounts payable, and settlement of accounts</li>
-      <li>Land and building sales journal</li>
-    </ul>
-
-    <h3>Heraeus Japan Co., Ltd | Tokyo, Japan</h3>
-    <p>Accountant | Apr 2008–May 2012</p>
-    <ul>
-      <li>Accounts receivable, accounts payable, and settlement of accounts</li>
-      <li>Preparation of monthly and annual financial statements, accounting system introduction work</li>
-      <li>Accountant at import and sales companies (metals, precious metal compounds, and medical materials company)</li>
-    </ul>
-
-    <h3>Fresh Delmonte Japan Co., Ltd | Tokyo, Japan</h3>
-    <p>Accountant | Apr 2007–Mar 2008</p>
-    <ul>
-      <li>Accounts receivable, accounts payable, and settlement of accounts</li>
-    </ul>
-  </section>
-
-  <!-- ************  CONTACT FORM  ************************ -->
-  <section id="email" class="section-contact-form">
-    <h2>Email me!</h2>
-    <form action="#">
-      <!--When PHP is not in use, place # within action = "#".-->
-      <div>
-        <label>Name</label>
-        <input type="text" name="name">
-      </div>
-      <div>
-        <label><small class="required">*</small>
-          Email ( <small>*</small>is required)</label>
-        <input type="email" name="email" required>
-      </div>
-      <div>
-        <label>Message</label>
-        <textarea name="message"></textarea>
-      </div>
-      <input type="submit" value="SEND" onclick="sendClicked()">
-    </form>
-  </section>
-
-  <!-- ************  CONTACT INFO / SOCIAL MEDIA  ************ -->
-  <section id="contact" class="section-contact">
-    <h2>Contact</h2>
-    <div class="contact-flex">
-      <ul class="contact-item">
-        <li><i class="fas fa-home"></i> Åkerbyvägen 224, Lgh 1302, 18737 Täby, Sweden</li>
-        <li><i class="fas fa-phone-square"></i> 0767812273</li>
-        <li><a href="mailto:zurichcoop@gmail.com"><i class="far fa-envelope"></i> mari.artho@medieinstitutet.se</a></li>
-        <li><a href="https://www.linkedin.com/in/mari-artho-214505142"><i class="fab fa-linkedin"></i> Linkedin</a></li>
-        <li><a href="https://github.com/Mari-Artho"><i class="fab fa-github"></i> GitHub</a></li>
+      <h3>Heraeus Japan Co., Ltd | Tokyo, Japan</h3>
+      <p>Accountant | Apr 2008–May 2012</p>
+      <ul>
+        <li>
+          Accounts receivable, accounts payable, and settlement of accounts
+        </li>
+        <li>
+          Preparation of monthly and annual financial statements, accounting
+          system introduction work
+        </li>
+        <li>
+          Accountant at import and sales companies (metals, precious metal
+          compounds, and medical materials company)
+        </li>
       </ul>
-      <a href="#home"><img class="contact-logo" src="images/logo-blue.png" alt="Mari Artho's logo" height="200" width="200"></a>
-    </div>
 
-  </section>
+      <h3>Fresh Delmonte Japan Co., Ltd | Tokyo, Japan</h3>
+      <p>Accountant | Apr 2007–Mar 2008</p>
+      <ul>
+        <li>
+          Accounts receivable, accounts payable, and settlement of accounts
+        </li>
+      </ul>
+    </section>
 
-  <!-- ************  FOOTER ************ -->
-  <footer>Copyright © Mari Artho All Rights Reserved. Logo is made by Logo maker. <a
-        href="https://www.designevo.com/jp/" title="無料オンラインロゴメーカー">DesignEvo</a> </footer>
-</body>
+    <!-- ************  CONTACT FORM  ************************ -->
+    <section id="email" class="section-contact-form">
+      <h2>Email me!</h2>
+      <form action="#">
+        <!--When PHP is not in use, place # within action = "#".-->
+        <div>
+          <label>Name</label>
+          <input type="text" name="name" />
+        </div>
+        <div>
+          <label
+            ><small class="required">*</small> Email ( <small>*</small>is
+            required)</label
+          >
+          <input type="email" name="email" required />
+        </div>
+        <div>
+          <label>Message</label>
+          <textarea name="message"></textarea>
+        </div>
+        <input type="submit" value="SEND" onclick="sendClicked()" />
+      </form>
+    </section>
+
+    <!-- ************  CONTACT INFO / SOCIAL MEDIA  ************ -->
+    <section id="contact" class="section-contact">
+      <h2>Contact</h2>
+      <div class="contact-flex">
+        <ul class="contact-item">
+          <li>
+            <i class="fas fa-home"></i> Åkerbyvägen 224, Lgh 1302, 18737 Täby,
+            Sweden
+          </li>
+          <li><i class="fas fa-phone-square"></i> 0767812273</li>
+          <li>
+            <a href="mailto:zurichcoop@gmail.com"
+              ><i class="far fa-envelope"></i> mari.artho@medieinstitutet.se</a
+            >
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/mari-artho-214505142"
+              ><i class="fab fa-linkedin"></i> Linkedin</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/Mari-Artho"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </li>
+        </ul>
+        <a href="#home"
+          ><img
+            class="contact-logo"
+            src="images/logo-blue.png"
+            alt="Mari Artho's logo"
+            height="200"
+            width="200"
+        /></a>
+      </div>
+    </section>
+
+    <!-- ************  FOOTER ************ -->
+    <footer>
+      Copyright © Mari Artho All Rights Reserved. Logo is made by Logo maker.
+      <a href="https://www.designevo.com/jp/" title="無料オンラインロゴメーカー"
+        >DesignEvo</a
+      >
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
