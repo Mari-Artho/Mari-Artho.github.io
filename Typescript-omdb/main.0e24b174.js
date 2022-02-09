@@ -148,7 +148,7 @@ exports.Service = Service; // any means that you return either nothing (void) or
 
 function getOMDBData(useData) {
   //Get data from API.
-  fetch("http://www.omdbapi.com/?i=tt3896198&apikey=453d560a").then(function (response) {
+  fetch("https://www.omdbapi.com/?i=tt3896198&apikey=453d560a").then(function (response) {
     return response.json();
   }) // the map function is below
   .then(function (movieInfo) {
@@ -160,7 +160,7 @@ function getOMDBData(useData) {
 
 function getMovieDataFromOMDB(title, useData) {
   //Get data from API.
-  fetch("http://www.omdbapi.com/?t=" + encodeURIComponent(title) + "&apikey=453d560a").then(function (response) {
+  fetch("https://www.omdbapi.com/?t=" + encodeURIComponent(title) + "&apikey=453d560a").then(function (response) {
     return response.json();
   }) // the map function is below
   .then(function (movieInfo) {
@@ -409,4 +409,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","ts/main.ts"], null)
-//# sourceMappingURL=/main.0e24b174.js.map
+//# sourceMappingURL=main.0e24b174.js.map
