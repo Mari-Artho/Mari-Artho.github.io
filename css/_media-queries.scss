@@ -270,6 +270,11 @@ nav > ul:last-of-type{
         text-align: center;
     }
 
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
 //----------EDUCATION SECTION(Mobile)------------------
     .section-education {
         p{

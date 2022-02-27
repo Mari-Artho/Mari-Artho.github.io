@@ -45,8 +45,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -231,8 +230,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -266,8 +264,7 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -376,14 +373,10 @@ article {
 }
 
 nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-transform: uppercase;
   list-style: none;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -397,6 +390,9 @@ nav li {
 nav a {
   text-decoration: none;
   color: black;
+}
+nav a:hover {
+  color: rgba(10, 90, 240, 0.872);
 }
 
 .section-about-me {
@@ -417,6 +413,24 @@ nav a {
   margin-right: 270px;
 }
 
+.project {
+  margin-left: 40%;
+}
+
+.skill-icon {
+  display: flex;
+  list-style: none;
+}
+.skill-icon li {
+  font-size: 3rem;
+  margin-right: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .section-project {
   background-color: #dfd8cd;
   padding-top: var(--nav-padding-top);
@@ -426,13 +440,10 @@ nav a {
   padding-bottom: 20px;
 }
 .section-project .project-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .section-project .project-item img:hover {
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
 
 .section-project > article:last-of-type {
@@ -571,8 +582,6 @@ input[type=submit]:hover {
 }
 
 .contact-flex {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: 22%;
 }
@@ -605,8 +614,7 @@ footer {
   }
 
   nav ul {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     height: 50px;
   }
   nav li {
@@ -630,8 +638,7 @@ footer {
   }
   .section-about-me p {
     margin-left: 60px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     margin-top: 0;
     margin-right: 0;
     font-size: 3rem;
@@ -648,8 +655,7 @@ footer {
   }
 
   nav ul {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   nav li {
     padding-top: 20px;
@@ -668,8 +674,7 @@ footer {
     margin-bottom: 20px;
   }
   .section-about-me p {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 0;
@@ -713,13 +718,8 @@ footer {
 /*Tablet:761px-810px*/
 @media screen and (min-width: 481px) and (max-width: 760px) {
   .wrapper-mediaquery {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   h2, h3, p, article, label, textarea, ul {
@@ -748,13 +748,8 @@ footer {
   }
   nav ul {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     height: auto;
     margin-bottom: 0;
     padding-top: 10px;
@@ -822,10 +817,7 @@ footer {
   .contact-flex {
     margin-left: 10px;
     display: inline-block;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 
   .contact-logo {
@@ -835,13 +827,8 @@ footer {
 /*Mobile Landscape:481px-760px(Galaxy,iPhoneSE)*/
 @media screen and (max-width: 480px) {
   .wrapper-mediaquery {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   h2, h3, p, article, label, textarea {
@@ -855,13 +842,8 @@ footer {
 
   nav ul {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     height: auto;
     margin-bottom: 0;
     padding-top: 10px;
@@ -886,8 +868,7 @@ footer {
     font-size: 2.2rem;
   }
   .section-about-me p {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     margin-right: 5px;
     margin-top: 0;
     font-size: 2.2rem;
@@ -897,6 +878,11 @@ footer {
     max-width: 100%;
     height: auto;
     text-align: center;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
   }
 
   .section-education p {
@@ -956,10 +942,7 @@ footer {
   .contact-flex {
     margin-left: 10px;
     display: inline-block;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 
   .contact-logo {
