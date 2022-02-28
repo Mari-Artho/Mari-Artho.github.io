@@ -885,6 +885,14 @@ footer {
     flex-direction: column;
   }
 
+  .project {
+    margin-left: 10px;
+  }
+
+  #githubRepos {
+    margin-left: 10px;
+  }
+
   .section-education p {
     margin-left: 20px;
   }
@@ -915,6 +923,11 @@ footer {
   .competence-content {
     background-color: rgba(255, 255, 255, 0.4);
     z-index: 99;
+  }
+
+  .skill-icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .section-work p {

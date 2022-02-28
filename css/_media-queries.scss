@@ -275,6 +275,14 @@ nav > ul:last-of-type{
         flex-direction: column;
     }
 
+    .project {
+        margin-left: 10px;
+    }
+
+    #githubRepos {
+        margin-left: 10px ;
+    }
+
 //----------EDUCATION SECTION(Mobile)------------------
     .section-education {
         p{
@@ -308,6 +316,11 @@ nav > ul:last-of-type{
     .competence-content {
         background-color: rgba(#fff, .4);
         z-index: 99;
+    }
+
+    .skill-icon {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
 //----------WORK SECTION(Mobile)--------------------------
