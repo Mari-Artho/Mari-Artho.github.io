@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "./zoo-react/static/css/main.89ee8248.css",
+    "main.js": "./zoo-react/static/js/main.7a408a5a.js",
+    "static/js/787.2cb77e5a.chunk.js": "./zoo-react/static/js/787.2cb77e5a.chunk.js",
+    "index.html": "./zoo-react/index.html",
+    "main.89ee8248.css.map": "./zoo-react/static/css/main.89ee8248.css.map",
+    "main.7a408a5a.js.map": "./zoo-react/static/js/main.7a408a5a.js.map",
+    "787.2cb77e5a.chunk.js.map": "./zoo-react/static/js/787.2cb77e5a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89ee8248.css",
+    "static/js/main.7a408a5a.js"
+  ]
+}
