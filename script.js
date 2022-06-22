@@ -6,6 +6,7 @@ fetch("https://api.github.com/users/mari-artho/repos")
     console.log("github API", json);
 
     var githubRepos = document.getElementById("githubRepos");
+    var i = 0;
     for (i = 0; i < json.length; i++) {
       githubRepos.insertAdjacentHTML(
         "beforeend",
