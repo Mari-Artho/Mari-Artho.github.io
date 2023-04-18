@@ -47,7 +47,7 @@ nav {
   a {
     text-decoration: none;
     color: black;
-    &:hover{
+    &:hover {
       color: rgba(10, 90, 240, 0.872);
     }
   }
@@ -74,13 +74,13 @@ nav {
 //----------Project Section------------------
 .project {
   margin-left: 40%;
-  margin-bottom: 20px;;
+  margin-bottom: 20px;
 }
 
 .skill-icon {
   display: flex;
   list-style: none;
-  li{
+  li {
     font-size: 3rem;
     margin-right: 20px;
   }
@@ -112,6 +112,32 @@ nav {
 
 #githubRepos {
   margin-left: 25%;
+}
+
+//----------Worke experience Section------------------
+.section-work {
+  background-color: rgb(205, 205, 207);
+  h3 {
+    color: rgba(1, 8, 62, 0.842);
+    font-weight: 700;
+  }
+  p {
+    margin-left: var(--margin-left);
+  }
+  ul {
+    margin-left: var(--margin-left);
+    margin-right: 10%;
+    border-bottom: var(--border-bottom);
+    margin-bottom: 0;
+  }
+  li {
+    padding-bottom: 20px;
+  }
+  padding-top: var(--nav-padding-top);
+}
+
+.section-work > ul:last-of-type {
+  border-bottom: none;
 }
 
 //----------Education Section------------------
@@ -148,32 +174,6 @@ nav {
     margin-bottom: 0;
   }
   padding-top: var(--nav-padding-top);
-}
-
-//----------Worke experience Section------------------
-.section-work {
-  background-color: lightgray;
-  h3 {
-    color: rgba(1, 8, 62, 0.842);
-    font-weight: 700;
-  }
-  p {
-    margin-left: var(--margin-left);
-  }
-  ul {
-    margin-left: var(--margin-left);
-    margin-right: 10%;
-    border-bottom: var(--border-bottom);
-    margin-bottom: 0;
-  }
-  li {
-    padding-bottom: 20px;
-  }
-  padding-top: var(--nav-padding-top);
-}
-
-.section-work > ul:last-of-type {
-  border-bottom: none;
 }
 
 //----------Contact Form------------------

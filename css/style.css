@@ -424,6 +424,31 @@ nav a:hover {
   margin-left: 25%;
 }
 
+.section-work {
+  background-color: rgb(205, 205, 207);
+  padding-top: var(--nav-padding-top);
+}
+.section-work h3 {
+  color: rgba(1, 8, 62, 0.842);
+  font-weight: 700;
+}
+.section-work p {
+  margin-left: var(--margin-left);
+}
+.section-work ul {
+  margin-left: var(--margin-left);
+  margin-right: 10%;
+  border-bottom: var(--border-bottom);
+  margin-bottom: 0;
+}
+.section-work li {
+  padding-bottom: 20px;
+}
+
+.section-work > ul:last-of-type {
+  border-bottom: none;
+}
+
 .section-education {
   background-color: rgba(165, 169, 170, 0.378);
   padding-top: var(--nav-padding-top);
@@ -457,31 +482,6 @@ nav a:hover {
   margin-left: var(--margin-left);
   padding-bottom: 20px;
   margin-bottom: 0;
-}
-
-.section-work {
-  background-color: lightgray;
-  padding-top: var(--nav-padding-top);
-}
-.section-work h3 {
-  color: rgba(1, 8, 62, 0.842);
-  font-weight: 700;
-}
-.section-work p {
-  margin-left: var(--margin-left);
-}
-.section-work ul {
-  margin-left: var(--margin-left);
-  margin-right: 10%;
-  border-bottom: var(--border-bottom);
-  margin-bottom: 0;
-}
-.section-work li {
-  padding-bottom: 20px;
-}
-
-.section-work > ul:last-of-type {
-  border-bottom: none;
 }
 
 .section-contact-form {
