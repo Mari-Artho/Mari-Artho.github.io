@@ -1,4 +1,4 @@
-import "animate.css";
+//import "animate.css";
 
 fetch("https://api.github.com/users/mari-artho/repos")
   .then(function (response) {
