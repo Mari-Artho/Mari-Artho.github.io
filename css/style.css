@@ -413,7 +413,10 @@ nav a:hover {
   display: flex;
 }
 .section-project .project-item img:hover {
-  transform: scale(1.1, 1.1);
+  -webkit-animation: swing;
+          animation: swing;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .section-project > article:last-of-type {
